@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MR. BAER</title>
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23121c25%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Georgia,serif%22 font-size=%2221%22 fill=%22%23c9ab7e%22 text-anchor=%22middle%22 letter-spacing=%221%22%3EHXB%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23121c25%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23c9ab7e%22 text-anchor=%22middle%22 letter-spacing=%221%22%3EMB%3C/text%3E%3C/svg%3E">
 <style>
   @font-face { font-family: "Cormorant Garamond"; src: url("/fonts/cormorant-400.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
   @font-face { font-family: "Jost"; src: url("/fonts/jost-400.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
@@ -13,9 +13,6 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--ivory); color: var(--ink); font-family: "Jost", system-ui, sans-serif; font-size: 16px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
   a { color: inherit; }
-  header { background: var(--night); color: var(--ivory); }
-  header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 26px; padding-bottom: 26px; }
-  header a { text-decoration: none; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; }
   .wrap { max-width: 820px; margin: 0 auto; padding: 0 28px; }
   main { padding: 90px 0 110px; }
   .label { font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: var(--brass); }
@@ -24,9 +21,10 @@
   h3 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 26px 0 6px; font-weight: 400; }
   p, li { font-size: 15.5px; color: #3d3b36; }
   p + p { margin-top: 12px; }
-  footer { background: var(--night); color: rgba(245,241,233,.5); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; }
-  footer .wrap { padding-top: 30px; padding-bottom: 36px; }
-  .nf { min-height: calc(100vh - 160px); display: flex; align-items: center; text-align: center; padding: 80px 0; }
+  body { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+  footer { color: var(--muted); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; }
+  footer .wrap { padding-top: 26px; padding-bottom: calc(26px + env(safe-area-inset-bottom)); text-align: center; }
+  .nf { flex: 1; display: flex; align-items: center; text-align: center; padding: 80px 0; }
   .nf .wrap { width: 100%; }
   .nf h1 { margin: 16px 0 20px; }
   .nf p { max-width: 440px; margin: 0 auto 40px; }
@@ -35,11 +33,6 @@
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <a href="/">← Hans X. Baer</a>
-  </div>
-</header>
 <main class="nf">
   <div class="wrap">
     <div class="label">Error 404</div>
