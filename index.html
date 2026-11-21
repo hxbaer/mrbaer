@@ -139,18 +139,18 @@
 
   /* entrance + interaction */
   .art { overflow: visible; }
-  .glint { position: absolute; left: 51%; top: 43.3%; width: 5.5%; aspect-ratio: 1; transform: translate(-50%,-50%) scale(.3); pointer-events: none; z-index: 2; opacity: 0; animation: glint 8s 3.2s ease-in-out infinite; filter: drop-shadow(0 0 3px rgba(201,163,106,.9)); }
+  .glint { position: absolute; left: 51%; top: 43.3%; width: 5.5%; aspect-ratio: 1; transform: translate(-50%,-50%) scale(.3); pointer-events: none; z-index: 2; opacity: 0; animation: glint 8s 4.2s ease-in-out infinite; filter: drop-shadow(0 0 3px rgba(201,163,106,.9)); }
   .glint::before, .glint::after { content: ""; position: absolute; left: 50%; top: 50%; width: 100%; height: 2px; transform: translate(-50%,-50%); background: linear-gradient(90deg, transparent, #fff 45%, #fff 55%, transparent); border-radius: 2px; }
   .glint::after { transform: translate(-50%,-50%) rotate(90deg); }
   @keyframes glint { 0%, 86%, 100% { opacity: 0; transform: translate(-50%,-50%) scale(.3) rotate(0deg); } 92% { opacity: 1; transform: translate(-50%,-50%) scale(1) rotate(45deg); } }
   h1 .ch { display: inline-block; white-space: pre; }
   .rule { transform-origin: left center; transition: box-shadow .4s; }
   .nm:hover .rule { box-shadow: 0 0 10px rgba(201,163,106,.8); }
-  html.anim .art img { opacity: 0; filter: blur(10px); transform: scale(1.025); animation: artIn 1.1s cubic-bezier(.2,.7,.2,1) .05s forwards; }
-  html.anim h1 .ch { opacity: 0; transform: translateY(.35em); animation: chIn .7s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: calc(.6s + var(--i) * 55ms); }
-  html.anim .rule { transform: scaleX(0); animation: ruleIn .9s cubic-bezier(.65,0,.25,1) 1.2s forwards; }
-  html.anim .tag { opacity: 0; animation: fadeIn .9s ease 1.75s forwards; }
-  html.anim .soc { opacity: 0; transform: translateY(6px); animation: socIn .8s ease 2.15s forwards; }
+  html.anim .art img { opacity: 0; filter: blur(10px); transform: scale(1.025); animation: artIn 1.5s cubic-bezier(.2,.7,.2,1) .05s forwards; }
+  html.anim h1 .ch { opacity: 0; transform: translateY(.35em); animation: chIn .9s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: calc(.9s + var(--i) * 90ms); }
+  html.anim .rule { transform: scaleX(0); animation: ruleIn 1.1s cubic-bezier(.65,0,.25,1) 1.9s forwards; }
+  html.anim .tag { opacity: 0; animation: fadeIn 1s ease 2.6s forwards; }
+  html.anim .soc { opacity: 0; transform: translateY(6px); animation: socIn .9s ease 3.1s forwards; }
   html.anim .art img.in { animation: none; opacity: 1; filter: none; transform: none; }
   @keyframes artIn { to { opacity: 1; filter: blur(0); transform: none; } }
   @keyframes chIn { to { opacity: 1; transform: none; } }
