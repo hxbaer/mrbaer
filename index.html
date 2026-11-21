@@ -76,6 +76,7 @@
     margin-bottom: 26px;
   }
   .rule { width: 56px; height: 1px; background: var(--brass); }
+  @media (min-width: 821px) { .intro { width: max-content; } .rule { width: 100%; } }
   .lead {
     font-family: var(--serif);
     font-style: italic;
@@ -113,7 +114,7 @@
     * { animation: none !important; transition: none !important; }
   }
   footer { display: flex; flex-direction: column; align-items: center; gap: 14px; }
-  footer a.ig { display: inline-flex; width: 36px; height: 36px; align-items: center; justify-content: center; color: var(--brass); border: 1px solid var(--line); border-radius: 50%; transition: color .3s, border-color .3s, background .3s; }
+  footer a.ig { display: inline-flex; width: 48px; height: 48px; align-items: center; justify-content: center; color: var(--brass); border: 1px solid var(--line); border-radius: 50%; transition: color .3s, border-color .3s, background .3s; }
   footer a.ig:hover, footer a.ig:focus-visible { color: var(--paper); background: var(--brass); border-color: var(--brass); outline: none; }
 </style>
 </head>
@@ -128,7 +129,7 @@
   </div>
 </main>
 
-<footer><a class="ig" href="https://www.instagram.com/mrbaer.ch/" target="_blank" rel="noopener" aria-label="MR. BAER on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg></a></footer>
+<footer><a class="ig" href="https://www.instagram.com/mrbaer.ch/" target="_blank" rel="noopener" aria-label="MR. BAER on Instagram"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg></a></footer>
 
 </body>
 </html>
