@@ -42,3 +42,12 @@ content:
       - name: share_image_alt
         label: "Teilen: Alt-Text des Vorschaubilds"
         type: string
+  - name: notfound
+    label: Fehlerseite (404)
+    type: file
+    path: _data/notfound.yml
+    fields:
+      - { name: label, label: Zeile über der Überschrift, type: string }
+      - { name: heading, label: Überschrift, type: string }
+      - { name: text, label: Text, type: text }
+      - { name: button, label: Button, type: string }
