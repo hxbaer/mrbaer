@@ -1,0 +1,44 @@
+# Pages CMS – https://app.pagescms.org (Login mit GitHub, Repo hxbaer/mrbaer wählen)
+media:
+  input: images
+  output: /images
+  extensions: [webp, jpg, jpeg, png, svg]
+content:
+  - name: home
+    label: Startseite
+    type: file
+    path: _data/home.yml
+    fields:
+      - name: name
+        label: Name (Überschrift)
+        type: string
+        required: true
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: image
+        label: Bild
+        type: image
+        description: Quadratisch, ca. 1254 × 1254 px, am besten WebP.
+      - name: image_alt
+        label: Bildbeschreibung (Alt-Text)
+        type: string
+      - name: instagram
+        label: Instagram-Link
+        type: string
+      - name: seo_title
+        label: "SEO: Seitentitel (Browser-Tab, Google)"
+        type: string
+      - name: seo_description
+        label: "SEO: Beschreibung für Google"
+        type: text
+      - name: share_description
+        label: "Teilen: Beschreibung (Vorschau auf WhatsApp, LinkedIn etc.)"
+        type: text
+      - name: share_image
+        label: "Teilen: Vorschaubild"
+        type: image
+        description: 1200 × 1200 px, JPG.
+      - name: share_image_alt
+        label: "Teilen: Alt-Text des Vorschaubilds"
+        type: string

@@ -1,0 +1,11 @@
+# Inhalte der Startseite von mrbaer.ch. Bearbeitung über Pages CMS (app.pagescms.org).
+name: "MR. BAER"
+tagline: "Gentleman · Host · Bon Vivant"
+image: "/images/mr-baer.webp"
+image_alt: "Illustration of Mr. Baer leaning against a hotel bar with a martini"
+instagram: "https://www.instagram.com/mrbaer.ch/"
+seo_title: "MR. BAER"
+seo_description: "MR. BAER — Gentleman · Host · Bon Vivant."
+share_description: "Gentleman · Host · Bon Vivant."
+share_image: "/images/og.jpg"
+share_image_alt: "Illustration of Mr. Baer at a hotel bar"

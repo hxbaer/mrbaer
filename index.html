@@ -1,21 +1,24 @@
-<!DOCTYPE html>
+---
+layout: null
+---
+{% assign d = site.data.home %}<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MR. BAER</title>
-<meta property="og:title" content="MR. BAER">
-<meta property="og:description" content="Gentleman · Host · Bon Vivant.">
+<title>{{ d.seo_title | escape }}</title>
+<meta property="og:title" content="{{ d.seo_title | escape }}">
+<meta property="og:description" content="{{ d.share_description | escape }}">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://www.mrbaer.ch/">
-<meta property="og:image" content="https://www.mrbaer.ch/images/og.jpg">
+<meta property="og:image" content="https://www.mrbaer.ch{{ d.share_image }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
-<meta property="og:image:alt" content="Illustration of Mr. Baer at a hotel bar">
+<meta property="og:image:alt" content="{{ d.share_image_alt | escape }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#faf6ee">
 <meta name="robots" content="index, follow">
-<meta name="description" content="MR. BAER — Gentleman · Host · Bon Vivant.">
+<meta name="description" content="{{ d.seo_description | escape }}">
 <link rel="canonical" href="https://www.mrbaer.ch/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23121c25%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-family=%22Georgia,serif%22 font-size=%2224%22 fill=%22%23c9ab7e%22 text-anchor=%22middle%22 letter-spacing=%221%22%3EMB%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="fonts/cormorant-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -168,15 +171,15 @@
 <main>
   <div class="left">
   <div class="intro">
-    <div class="nm"><h1>MR. BAER</h1>
+    <div class="nm"><h1>{{ d.name | escape }}</h1>
     <div class="rule" aria-hidden="true"></div></div>
-    <p class="tag">Gentleman · Host · Bon Vivant</p>
+    <p class="tag">{{ d.tagline | escape }}</p>
   </div>
-  <div class="soc"><a class="ig" href="https://www.instagram.com/mrbaer.ch/" target="_blank" rel="noopener" aria-label="MR. BAER on Instagram"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg></a></div>
+  <div class="soc"><a class="ig" href="{{ d.instagram | escape }}" target="_blank" rel="noopener" aria-label="{{ d.name | escape }} on Instagram"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg></a></div>
   </div>
   <div class="art">
     <span class="glint" aria-hidden="true"></span>
-    <img src="images/mr-baer.webp" width="1254" height="1254" alt="Illustration of Mr. Baer leaning against a hotel bar with a martini" fetchpriority="high">
+    <img src="{{ d.image }}" width="1254" height="1254" alt="{{ d.image_alt | escape }}" fetchpriority="high">
   </div>
 </main>
 
